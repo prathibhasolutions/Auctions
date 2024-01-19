@@ -76,14 +76,21 @@ WSGI_APPLICATION = 'commerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+#DATABASES = {
+#   'default': {
+#     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#   }
+#}
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'd6aqidapqfrgoo',
+        'USER': 'bawegieejfejew',
+        'PASSWORD': '2f86e59f703c55893e08ab349152ffa35f08801328b4bc8ef0839c416a0d1f02',
+        'HOST': 'ec2-44-206-204-65.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -128,6 +135,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
-
 
 django_heroku.settings(locals())
